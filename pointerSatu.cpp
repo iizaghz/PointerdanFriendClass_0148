@@ -8,5 +8,17 @@ class mahasiswa{
     }
 };
 
+int main(){
+    mahasiswa mhs{1}; //objek mhs
+    mhs.showNim(); //member access operator
 
+    mahasiswa &refMhs = mhs; //pointer reference reffMhs
+    refMhs.nim = 2; //member access operator
+    mhs.showNim();
+
+    mahasiswa *pMhs = &mhs; //pointer deference pMhs
+    pMhs->nim = 3; //arrow operator
+    pMhs->showNim(); 
+    return 0;
+}
     
